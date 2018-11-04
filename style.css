@@ -119,6 +119,31 @@ input, textarea {
     background-color: transparent;
 }
 
+.section-title {
+    text-align: center;
+    position: relative;
+    font-size: 34px;
+    font-weight: 600;
+    color: #004b8e;
+    margin-bottom: 50px;
+}
+
+.section-title:before, .section-title:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 150px;
+    height: 4px;
+    background: #004b8e;
+    content: '';
+    margin-left: -75px;
+}
+
+.section-title:after {
+    width: 75px;
+    bottom: -5px;
+    height: 2px;
+}
 
 
 /**
@@ -165,8 +190,9 @@ input, textarea {
     position: absolute;
     right: 0;
     top: 0;
-    height: 100%;
+    height: calc(100% + 85px);
     width: auto;
+    z-index: 0;
 }
 
 .banner-wrap .container {
@@ -178,11 +204,15 @@ input, textarea {
     background: rgba(0, 73, 141, 0.7);
     color: #fff;
     padding: 20px 0;
+    z-index: 3;
+    position: relative;
 }
 
 .banner-bottom h3 {
     margin: 0;
     color: inherit;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .banner-info {
@@ -244,4 +274,74 @@ input, textarea {
 
 .banner-info .button+.button {
     margin-left: 10px;
+}
+
+
+
+
+
+/**
+* ===================================
+* = 04. USA-Clients CSS
+* ===================================
+*/
+.usa-clients-wrap .block1 {
+    margin-bottom: 50px;
+}
+
+.usa-clients-wrap .block1 h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.usa-clients-wrap .col-lg-7 > h4 {
+    font-weight: 600;
+    color: #004b8e;
+    font-size: 20px;
+}
+
+.checkmark {
+    margin-bottom: 50px;
+}
+
+.checkmark li {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    line-height: 2.2;
+    font-size: 18px;
+}
+
+.checkmark li:before {
+    content: "\f00c";
+    color: #004b8e;
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+}
+
+.usa-clients-form label {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.usa-clients-form {
+    font-size: 15px;
+    line-height: 1.1;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.usa-clients-form .button {
+    position: absolute;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    transform: translate(0, 50%);
+    bottom: 0;
+    z-index: 3;
 }

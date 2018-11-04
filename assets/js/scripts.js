@@ -2,8 +2,8 @@
     "use strict";
     jQuery(document).ready(function() {
 
-        // Activate SlickNav
-        // $('#menu').slicknav();
+        // Activate Tooltip
+        $('[data-title]').tooltip()
 
     });
 })(jQuery);
