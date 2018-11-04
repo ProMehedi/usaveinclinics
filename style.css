@@ -36,8 +36,8 @@ Author URI: http://promehedi.com/
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #777;
-    font-size: 14px;
+    color: #000;
+    font-size: 16px;
 }
 
 a:hover, a:focus {
@@ -58,14 +58,9 @@ ul {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: #333;
-}
-
 h1, h2, h3, h4 {
-	margin: 0 0 10px;
+    margin: 0 0 10px;
+    line-height: 1.9;
 }
 
 img {
@@ -101,11 +96,152 @@ input, textarea {
 
 .button {
     display: inline-block;
-    color: #363b4d;
-    font-size: 26px;
+    color: #fff;
+    background-color: #00529b;
+    font-size: 18px;
     text-transform: capitalize;
     border-radius: 5px;
     padding: 10px 30px;
-    transition: all 0.3s;
-    border: 2px solid #363b4d;
+    border: 2px solid #00529b;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.button[href]:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.button.btn-outline {
+    background-color: transparent;
+}
+
+
+
+/**
+* ===================================
+* = 02. Header CSS
+* ===================================
+*/
+.header-wrap {
+    padding: 30px 0;
+    box-shadow: 0px 3px 5px rgba(0,0, 0, 0.1);
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.header-text li {
+    display: inline-block;
+    position: relative;
+    padding: 3px 6px;
+    background: rgba(3, 78, 145, 1);
+    margin: 2px 0;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.header-text li:before {
+    content: "\f0c1";
+    padding-right: 5px;
+    color: #fff;
+    font-family: 'FontAwesome'
+}
+
+
+
+/**
+* ===================================
+* = 02. Banner CSS
+* ===================================
+*/
+.banner-wrap .container > img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+}
+
+.banner-wrap .container {
+    position: relative;
+}
+
+.banner-bottom {
+    text-align: center;
+    background: rgba(0, 73, 141, 0.7);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.banner-bottom h3 {
+    margin: 0;
+    color: inherit;
+}
+
+.banner-info {
+    padding: 50px 25px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin: 50px 0;
+}
+
+.banner-info h1, .banner-info h2, .banner-info h3, .banner-info h4, .banner-info a {
+    color: #fff;
+}
+
+.banner-info h3 {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner-info h3:before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    content: '';
+    margin-left: -25px;
+}
+
+.banner-info h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.banner-info h1 span {
+    font-weight: 600;
+}
+
+.banner-info h4 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.banner-info h5 {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.banner-info .button {
+    border: 2px solid #00529b;
+}
+
+.banner-info .button.btn-outline {
+    border: 2px solid;
+}
+
+.banner-info .button+.button {
+    margin-left: 10px;
 }
