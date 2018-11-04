@@ -1,0 +1,111 @@
+/*
+Version: 1.0.1
+Author: Mehedi Hasan
+Author URI: http://promehedi.com/
+*/
+/* ====================================================================
+[TABLE OF CONTENTS]
+-------------------
+01. Global CSS
+02. 
+*/
+/**
+* ===================================
+* = 01. Global CSS
+* ===================================
+*/
+::selection {
+  background: #f7f7f7;
+  color: #00b22d;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #f7f7f7;
+  /* Firefox */
+  color: #00b22d;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background: #f7f7f7;
+  /* Safari */
+  color: #00b22d;
+  text-shadow: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+    font-size: 14px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+input:focus, textarea:focus, button:focus, a:focus {
+    outline: none;
+}
+
+button[type=submit], input[type=submit] {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+	margin: 0 0 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+input, textarea {
+    padding: 10px 15px;
+    margin-bottom: 1em;
+}
+
+.bg {
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.button {
+    display: inline-block;
+    color: #363b4d;
+    font-size: 26px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: all 0.3s;
+    border: 2px solid #363b4d;
+}
